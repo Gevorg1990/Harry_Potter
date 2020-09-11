@@ -1,0 +1,215 @@
+
+
+
+
+
+<div class="headers">
+
+   <div class="cup">
+     <img class="b animate__animated" src="assets/images/b.png" alt="">
+    </div>
+    <div class="buklia">
+      <img src="assets/images/buk.png" alt="">
+    </div>
+ 
+ <div class="header__top d-flex justify-content-around">
+    <div class="header__logo">
+      <p class="header__text animate__animated "></p>
+    </div>
+ 
+   
+    <div class="header__search">
+    <input class="header__inp " id="header__inp" type="text" placeholder="имя...">
+    <button class="header__btn" ><i class="fas fa-hat-wizard"></i></button>
+    </div>
+ </div>
+ 
+ <div class="header__img">
+    
+    <div class="hidem d-flex justify-content-between ml-2">
+   
+    <div class="card" style="width: 9rem; ">
+       <img src="assets/images/h1.jpg"  (click)="filmName('h1')"  class="card-img-top" id="h1" alt="...">
+       <div class="">
+         <p class="my1">Гарри Поттер и Философский камень </p>
+       </div>
+ 
+     </div>
+     <div class="card" style="width: 9rem; ">
+       <img src="assets/images/h2.jpg" (click)="filmName('h2')" class="card-img-top" id="h2"  alt="...">
+       <div class="">
+         <p>Гарри Поттер и тайная комната </p>
+       </div>
+     </div>
+     <div class="card" style="width: 9rem; ">
+       <img src="assets/images/hu.jpg" (click)="filmName('h3')" class="card-img-top" id="h3" alt="...">
+       <div class="">
+         <p>Гарри Поттер и узник Азкабана </p>
+       </div>
+     </div>
+     <div class="card" style="width: 9rem; ">
+       <img src="assets/images/h4.jpg" (click)="filmName('h4')" class="card-img-top" id="h4" alt="...">
+       <div class="">
+         <p>Гарри Поттер и кубок огня</p>
+       </div>
+     </div>
+ 
+     
+     <div class="card" style="width: 9rem; ">
+       <img src="assets/images/h5.jpg" (click)="filmName('h5')" class="card-img-top" id="h5" alt="...">
+       <div class="">
+         <p>Гарри Поттер и орден Феникса </p>
+       </div>
+     </div>
+     <div class="card" style="width: 9rem; ">
+       <img src="assets/images/h6.jpg" (click)="filmName('h6')" class="card-img-top" id="h6" alt="...">
+       <div class="">
+         <p>Гарри Поттер и Принц полукровка</p>
+       </div>
+     </div>
+     <div class="card" style="width: 9rem; ">
+       <img src="assets/images/h7.jpg" (click)="filmName('h7')" class="card-img-top" id="h7" alt="...">
+       <div class="">
+         <p>Гарри Поттер и Дары Смерти Часть 1</p>
+       </div>
+     </div>
+     <div class="card" style="width: 9rem; ">
+       <img src="assets/images/h7.1.jpg" (click)="filmName('h7.1')" class="card-img-top" id="h7_1" alt="...">
+       <div class="">
+         <p>Гарри Поттер и Дары Смерти Часть II</p>
+       </div>
+     </div>
+ 
+    </div>
+ </div>
+ 
+ <div class="proFilm">
+   <p class="proFilm__title">
+      Pro Filma
+   </p>
+   <p class="proFilm__text">
+     {{OFilme1}}
+   </p>
+   <button class="proFilm__btn" id="but">подробнее...</button>
+   <div class="proFilm__block2">
+   <div class="proFilm__text2">
+   {{OFilme2}}
+   <hr>
+   {{OFilme3}}
+   </div>
+   <button class="proFilm__btn2">свернуть </button>
+ </div>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="header1 d-flex justify-content-center">
+   <div class="container ">
+      <!-- <div class="row">
+         <div class="col">
+           <div class="box-img">
+              <img src="{{img}}" alt="">
+           </div>
+         </div>
+         <div class="col ">
+           <ul>
+              <li><small>nazvanie</small>{{nazvanie}}</li>
+              <li><small>god</small>{{year}}</li>
+              <li><small>strana   </small>{{strana}}</li>
+              <li><small>janr</small>{{janr}}</li>
+              <li><small>vremya</small>{{time}}</li>
+              <li><small>prasmotr</small>{{prasmotr}}</li>
+              <li><small>rejisyor</small>{{rejisyor}}</li>
+              <li><small>glavnix vralyax</small>{{ralyax}}</li>
+             
+           </ul>
+         </div>
+      </div> -->
+ 
+      
+     <!-- </div> -->
+   </div>
+   </div>
+ 
+   <div class="section">
+     
+     <div class="filmName d-flex">
+       <div class="filmName__img d-flex">
+         <div class="filmName__box-img">
+           <div class="box">
+             <img src="{{img}}" alt="">
+           </div>
+         </div>
+         <div class="filmName__box-name d-flex">
+            <div class="filmName__nazvanie">
+              <p class="">название</p>
+              <p class="">год выпуска </p>
+              <p class="">страна </p>
+              <p class="">жанр</p>
+              <p class="">время</p>
+              <p class="">прасмотр </p>
+              <p class="">режисёр </p>
+              <p class="">главные в ролях</p>
+              
+            </div>
+            <div class="filmName__n">
+             
+              <p class="filmName__name">{{nazvanie}}</p>
+              <p class="filmName__year">{{year}}</p>
+              <p class="filmName__name">{{strana}}</p>
+              <p class="filmName__year">{{janr}}</p>
+              <p class="filmName__name">{{time}}</p>
+              <p class="filmName__year">{{prasmotr}}</p>
+              <p class="filmName__name">{{rejisyor}}</p>
+              <p class="filmName__name">{{ralyax}}</p>
+              
+            </div>
+         </div>
+       </div>
+ 
+     </div>
+   
+ 
+ </div>
+ 
+   <div class="video">
+     <p class="onlain">Smotret onlain</p>
+   <iframe id='cdn-player'class='ifram h1' src='https://voidboost.net/embed/689?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk' allowfullscreen=''></iframe>
+   <iframe id="cdn-player" class="ifram h2" src="https://voidboost.net/embed/688?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk" allowfullscreen=""></iframe>
+   <iframe id="cdn-player" class="ifram h3" src="https://voidboost.net/embed/322?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk" allowfullscreen=""></iframe>
+   <iframe id="cdn-player" class="ifram h4" src="https://voidboost.net/embed/8408?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk" allowfullscreen=""></iframe>
+   <iframe id="cdn-player" class="ifram h5" src="https://voidboost.net/embed/48356?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk" allowfullscreen=""></iframe>
+   <iframe id="cdn-player" class="ifram h6" src="https://voidboost.net/embed/89515?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk" allowfullscreen=""></iframe>
+   <iframe id="cdn-player" class="ifram h7" src="https://voidboost.net/embed/276762?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk" allowfullscreen=""></iframe>
+   <iframe id="cdn-player" class="ifram h7_1" src="https://voidboost.net/embed/407636?partner=gidonline&amp;t=21&amp;vstop=5&amp;vsright=208&amp;block=jp,mx,us,au,br,in,cn,ch,be,kp,sg,ca,kr,hk" allowfullscreen=""></iframe>
+ </div>
+ 
+   
+ 
+   <div class="contakt d-flex justify-content-between">
+     <div class="contakt__title">
+       <p>Рассказать друзьям </p>
+     </div>
+     <div class="contakt__seti mt-1">
+     <a class="f" href="https://www.facebook.com/" target="_blanck"><i class="fab fa-facebook-f"></i></a> 
+     <a  class="v" href="https://vk.com/?lang=en" target="_blanck"><i class="fab fa-vk"></i></a> 
+     <a class="o" href="https://ok.ru/" target="_blanck"><i class="fab fa-odnoklassniki"></i></a>
+     <a class="t" href="https://twitter.com/?lang=en" target="_blanck"><i class="fab fa-twitter"></i></a>
+     <a class="vb" href="https://www.viber.com/ru/" target="_blanck"><i class="fab fa-viber"></i></a>
+     <a class="vp" href="https://www.whatsapp.com/?lang=en"  target="_blanck"><i class="fab fa-whatsapp-square" ></i></a>
+   <a class="s" href="https://www.skype.com/en/" target="_blanck"><i  class="fab fa-skype"></i></a>
+   <a class="t"href="https://telegram.org/" target="_blanck"><i class="fab fa-telegram-plane"></i></a>
+     </div>
+   </div>
+ <audio class="avada" controls>
+  
+   <source class="avada1" src="assets/images/avada.mp3"type="audio/mpeg">
+   Your browser does not support the audio tag.
+ </audio>
+ <!-- position: absolute;
+ width: 234px;
+ height: 234px;
+ left: -40px;
+ top: -24px;
+ z-index: -; -->

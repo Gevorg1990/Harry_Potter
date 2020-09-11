@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "HarryPoter"
+    }
+  },
+  "defaultProject": "HarryPoter",
+  "cli": {
+    "analytics": "37f75c13-707a-4a88-adbb-38d7f2859b03"
+  }
 }
